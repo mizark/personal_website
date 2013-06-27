@@ -7,6 +7,7 @@ html, body {
 }
 
 a {
+	color: #444;
 	&:hover {
 		text-decoration:none;
 		color: #aaa;
@@ -24,7 +25,7 @@ p {
 
 .title1 {
 	font-size:30px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	padding-top:50px
 }
 
@@ -76,6 +77,21 @@ p {
 	font-size: 18px;
 }
 
+.project-links {
+	display: inline-block;
+	width: 220px;
+	color:white;
+	padding:40px 40px 40px 40px;
+	border-radius:3px;
+	font-size:22px;
+	margin-bottom: 20px;
+}
+
+.caption {
+	font-size: 14px;
+	margin-top:25px;
+}
+
 .dcpic {
 	background-image: url(/assets/dcmini.jpg);
 	height:300px; 
@@ -94,6 +110,27 @@ p {
 	border-radius:3px
 }
 
+.raspberrypic {
+	background-image: url(/assets/raspberrypi.jpg);
+	height:200px; 
+	width:300px; 
+	margin: 0 auto; 
+	background-size:300px 200px;
+	border-radius: 3px;
+
+}
+
+.raspberrypic-cover {
+	width:100%;
+	height:100%; 
+	background-color: rgba(0,0,0,.50);
+	color:white; 
+	text-align:center; 
+	border-radius:3px;
+
+}
+
+
 .github {
 	background-color: #555;
 }
@@ -103,6 +140,10 @@ p {
 
 .facebook {
 	background-color: #3B5998;
+}
+
+.spectize {
+	background-color: #a31e39
 }
 
 .school-spacing {
