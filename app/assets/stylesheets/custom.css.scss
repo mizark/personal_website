@@ -78,13 +78,13 @@ p {
 }
 
 .project-links {
-	display: inline-block;
-	width: 220px;
+	background-color: #a31e39;
+	width:220px;  
+	padding:20px 40px 20px 40px;
+	margin-bottom: 15px;
 	color:white;
-	padding:40px 40px 40px 40px;
-	border-radius:3px;
-	font-size:22px;
-	margin-bottom: 20px;
+	border-radius: 3px;
+	display: inline-block;
 }
 
 .caption {
@@ -113,11 +113,10 @@ p {
 .raspberrypic {
 	background-image: url(/assets/raspberrypi.jpg);
 	height:200px; 
-	width:300px; 
-	margin: 0 auto; 
+	width:300px;  
 	background-size:300px 200px;
 	border-radius: 3px;
-
+	margin: 0 auto;
 }
 
 .raspberrypic-cover {
