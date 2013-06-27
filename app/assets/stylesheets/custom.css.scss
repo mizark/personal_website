@@ -70,7 +70,6 @@ p {
 .main-links {
 	display: inline-block;
 	width: 150px;
-	background-color: #444;
 	color: white;
 	padding:20px;
 	border-radius:3px;
@@ -95,6 +94,9 @@ p {
 	border-radius:3px
 }
 
+.github {
+	background-color: #555;
+}
 .linkedin {
 	background-color: #0181B2;
 }
