@@ -8,4 +8,8 @@ class StaticPagesController < ApplicationController
 
 	end
 
+	def blog
+
+	end
+
 end
