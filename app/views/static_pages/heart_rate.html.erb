@@ -1,0 +1,64 @@
+<div style="width: 60%;margin-left: 20%;margin-bottom: 100px">
+
+	<p class="center title1" style="margin-top:10px;margin-bottom:30px">
+		Heart Rate Detector
+	</p>
+
+	<div style="text-align: center;margin:20px">
+		<a href="#" style="font-size: 24px;text-align:center; padding: 20px; background-color: #ddd; color: #444;border-radius: 3px">
+			Download
+		</a>
+
+		<p style="color: #555; font-size: 16px; margin-top: 30px">
+			System requirements: <br>
+			Must be running Mac OSX 10.7 or later.
+		</p>
+	</div>
+
+	<div style="margin-top:50px;color:#656565">
+		<p style="color:#00A480;">
+			Synopsis:
+		</p>
+
+		<p style="margin-top:20px"> 
+			Above is a program I wrote that uses your webcam to look at your face for ~1 min and calculates your heart rate. Accuracy is within ~3 beats of actual heart rate.
+		</p>
+
+		<p style="color:#00A480;margin-top:30px"> READ BEFORE DOWNLOAD: </p>
+
+		<p style="margin-top:20px;margin-bottom:20px"> 
+			1. Make sure there is good/even lighting on your face. Not extremely bright but enough to clearly see the face. Avoid light sources that cast shadows on your face.
+		</p>
+
+		<p style="margin-top:20px;margin-bottom:20px">
+			2. Try to keep your head as still as possible when the program is recording data from your face. The best way to do this is to focus your eyes directly on the camera lens. 
+		</p>
+
+		<p style="margin-top:20px; margin-bottom:20px">
+			3. Have the laptop sit on a stationary desk/table/surface. Running the program with the laptop on your lap only introduces more movement and may ruin the signal we are trying to extract.
+		<p>
+
+		<p style="color:#00A480;margin-top:30px"> Basic Concept </p>
+
+		<p style="margin-top: 20px">
+			Every time your heart contracts, the blood volume in your vessels increases then subsequently tapers off during diastole. The sinusoidal variation in blood flow through the body causes minute skin color changes that the human eye cannot detect but that a common webcam can. By tracking the change in skin color gradients over time, we can correlate this signal to a heart rate via Fast Fourier Transform(FFT). After processing the raw signal and cleaning it up via noise filtering techniques (ie Gaussian blur, band pass filtering, and independent component analysis) we extract the dominant frequency of the signal, given in Hertz, and simply convert to a heart rate, given in beats per minute.
+		</p>
+
+
+		<p style="color:#00A480;margin-top:30px;margin-bottom: 30px"> Tools Used </p>
+
+		<div>
+			<span style="padding:20px;font-size: 22px; background-color: #8181F7; border-radius:2px; color: white"> Python </span>
+			<span style="padding:20px;font-size: 22px; background-color: #8181F7; border-radius:2px; margin:10px; color: white"> OpenCV </span>
+		</div>
+
+
+	</div>
+
+</div>
+
+<div class="center" style="margin-bottom:100px">
+	<p style="font-size: 16px">
+		Created by Mark Amirtharaj
+	</p>
+</div>

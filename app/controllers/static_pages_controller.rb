@@ -12,4 +12,12 @@ class StaticPagesController < ApplicationController
 
 	end
 
+	def flashcards
+
+	end
+
+	def heart_rate
+
+	end
+
 end

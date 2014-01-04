@@ -5,7 +5,7 @@ PersonalWebsite::Application.routes.draw do
 
   match '/twitter', to: 'static_pages#twitter'
   match '/blog', to: 'static_pages#blog'
-
+  match '/heart_rate', to: 'static_pages#heart_rate'
 
 
 
