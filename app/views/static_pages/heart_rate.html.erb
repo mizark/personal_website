@@ -51,7 +51,7 @@
 		<p style="color:#00A480;margin-top:30px"> Basic Concept </p>
 
 		<p style="margin-top: 20px;font-size:18px">
-			Every time your heart contracts, the blood volume in your vessels increases then subsequently tapers off during diastole. The sinusoidal variation in blood flow through the body causes minute skin color changes that the human eye cannot detect but that a common webcam can. By tracking the change in skin color gradients over time, we can correlate this signal to a heart rate via Fast Fourier Transform (FFT). After processing the raw signal and cleaning it up via noise filtering techniques (ie Gaussian blur, band pass filtering, etc.) we perform an FFT on the data and calculate the power spectrum. We extract the dominant frequency of the signal by identifying the frequency that corresponds to max power, given in Hertz, and convert to a heart rate, given in beats per minute.
+			Every time your heart contracts, the blood volume in your vessels increases then subsequently tapers off during diastole. The sinusoidal variation in blood flow through the body causes minute skin color changes that the human eye cannot detect but that a common webcam can. By tracking the change in skin color gradients over time, we can correlate this signal to a heart rate via Fast Fourier Transform (FFT). After processing the raw signal and cleaning it up via noise filtering techniques (ie Gaussian blur, band pass filtering, etc.) we perform an FFT on the data and calculate the power spectrum. We extract the dominant frequency, given in Hertz, of the signal by identifying the frequency that corresponds to max power and convert to a heart rate, given in beats per minute.
 		</p>
 
 
