@@ -206,11 +206,11 @@ p {
 /* HEART RATE PAGE */
 
 .dl-button {
-	font-size: 24px;
+	font-size: 22px;
 	text-align:center; 
-	padding: 20px; 
-	background-color: #ddd;
-	color: #444;
+	padding: 20px 95px 20px 95px; 
+	background-color: #e5e5e5;
+	color: #555;
 	border-radius: 3px;
 
 	-webkit-transition: background .5s ease-out;
@@ -219,7 +219,7 @@ p {
 	transition: background .5s ease-out;
 	
 	&:hover {
-		background: #333;
+		background: #34cfbe;
 		color: #fff;
 		text-decoration: none;
 	}
