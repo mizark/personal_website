@@ -4,7 +4,7 @@
 	</p>
 
 		<p class="center" style="margin-bottom:40px;margin-top: 0px;font-size:18px;width:60%;margin-left:20%; color: #656565"> 
-			This program uses your webcam to look at your face for ~1 min and calculates your heart rate. Accuracy is within ~3 beats of actual pulse measured manually from wrist. 
+			This program uses your webcam to look at your face for 20 seconds and calculates your heart rate. If settings are optimal, accuracy is within ~3 beats of actual pulse measured manually from wrist. 
 		</p>
 
 
@@ -16,13 +16,12 @@
 
 	<div style="text-align: center;margin-top:60px">
 		<a class="dl-button" href="https://s3.amazonaws.com/heart_rate_detector/heart_rate_detector.zip" >
-			DOWNLOAD
+			Download for Mac OSX 10.7 or later
 		</a>
 
 		<p style="color: #555; font-size: 16px; margin-top: 50px">
 			Just download the zip file above and <br>
 			double click the app file inside to run. <br><br>
-			<strong> REQUIRED: </strong> you must be running Mac OSX 10.7 or later. <br>Versions for Windows + Linux coming soon.
 		</p>
 	</div>
 
@@ -30,7 +29,7 @@
 <div style="width: 60%;margin-left: 20%;margin-bottom: 100px">
 
 
-	<hr style="border-color: #e6e6e6;margin-top:35px">
+	<hr style="border-color: #e6e6e6;margin-top:25px">
 
 	<div style="margin-top:30px;color:#656565">
 		
@@ -52,6 +51,18 @@
 
 		<p style="margin-top: 20px;font-size:18px">
 			Every time your heart contracts, the blood volume in your vessels increases then subsequently tapers off during diastole. The sinusoidal variation in blood flow through the body causes minute skin color changes that the human eye cannot detect but that a common webcam can. By tracking the change in skin color gradients over time, we can correlate this signal to a heart rate via Fast Fourier Transform (FFT). After processing the raw signal and cleaning it up via noise filtering techniques (ie Gaussian blur, band pass filtering, etc.) we perform an FFT on the data and calculate the power spectrum. We extract the dominant frequency, given in Hertz, of the signal by identifying the frequency that corresponds to max power and convert to a heart rate, given in beats per minute.
+		</p>
+
+		<p style="color:#00A480;margin-top:30px"> Other Notes: </p>
+
+		<p style="margin-top: 20px;font-size:18px">
+			For Macs: if you click on the download and get the following message: "heart_rate_detector.app" can't be opened because it is from an unidentified developer. 
+			<br><br>
+			1. Go into your Downloads folder (or whereever the file is). <br>
+			2. Hold 'control' and click on the file (equivalent of right click on windows). On the dropdown menu that pops up, click 'Open.' <br>
+			3. On the pop up window that says "Are you sure you want to open it?" click 'Open.' <br><br>
+
+			Now the app should run.
 		</p>
 
 
